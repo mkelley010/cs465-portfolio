@@ -1,81 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
-    <link rel = "stylesheet" type = "text/css" href = "style.css">
-    <title>Title</title>
-</head>
-<body>
-    <article class="mw7 center ph3 ph5-ns tc br2 pv5 bg-washed-green dark-green mb5">
-        <h1 class="fw6 f3 f2-ns lh-title mt0 mb3">
-            Hello there!
-        </h1>
-        <h2 class="fw2 f4 lh-copy mt0 mb3">
-            Welcome to my portfolio.
-        </h2>
-        <p class="fw1 f5 mt0 mb3">
-            Below you'll find the projects I've worked on. Click a logo to be taken to the source code on GitHub.
-        </p>
-        <div>
-            <a class="f6 br-pill bg-dark-green no-underline washed-green ba b--dark-green grow pv2 ph3 dib mr3"
-               href="#">
-                Sign Up
-            </a>
-            <a class="f6 br-pill dark-green no-underline ba grow pv2 ph3 dib"
-               href="#">
-                Learn More
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+        <link rel = "stylesheet" type = "text/css" href = "style.css">
+        <title>Title</title>
+    </head>
+    <body>
+        <article class="mw7 center ph3 ph5-ns tc br2 pv5 bg-washed-green dark-green mb5">
+            <h1 class="fw6 f3 f2-ns lh-title mt0 mb3">
+                Hello there!
+            </h1>
+            <h2 class="fw2 f4 lh-copy mt0 mb3">
+                Welcome to my portfolio.
+            </h2>
+            <p class="fw1 f5 mt0 mb3">
+                Below you'll find the projects I've worked on. Click a logo to be taken to the source code on GitHub.
+            </p>
+            <div>
+                <a class="f6 br-pill bg-dark-green no-underline washed-green ba b--dark-green grow pv2 ph3 dib mr3"
+                   href="#about">
+                    About Me
+                </a>
+            </div>
+        </article>
+        <div class="card-container center w-50">
+            <article class="mw5 center bg-white br3 pa3 pa4-ns mv3 ba b--black-10 card-grow">
+                <div class="tc">
+                    <a href="http://galaxy-brain.herokuapp.com"><img src="jslogo.png" class="br-100 h3 w3 dib" title="JavaScript logo"></a>
+                    <h1 class="f4">Galaxy Brain</h1>
+                    <hr class="mw3 bb bw1 b--black-10">
+                </div>
+                <p class="lh-copy measure center f6 black-70">
+                    Web application for detecting faces in images.
+                    Created with React, Node, Express and PostgreSQL.
+                </p>
+                <a class="f6 no-underline br-pill ph3 pv2 mb2 dib white bg-black button-link" href="http://galaxy-brain.herokuapp.com/">View Website</a>
+            </article>
+            <article class="mw5 center bg-white br3 pa3 pa4-ns mv3 ba b--black-10 card-grow">
+                <div class="tc">
+                    <a href="https://github.com/mkelley010/chocan"><img src="javalogo.jpg" class="br-100 h3 w3 dib" title="Java logo"></a>
+                    <h1 class="f4">Chocoholics Anonymous</h1>
+                    <hr class="mw3 bb bw1 b--black-10">
+                </div>
+                <p class="lh-copy measure center f6 black-70">
+                    Group project for CS300.
+                    This program processes data for a fictional company known as Chocoholics Anonymous.
+                </p>
+            </article>
+            <article class="mw5 center bg-white br3 pa3 pa4-ns mv3 ba b--black-10 card-grow">
+                <div class="tc">
+                    <a href="https://github.com/mkelley010/xv6"><img src="clogo.png" class="br-100 h3 w3 dib" title="C logo"></a>
+                    <h1 class="f4">xv6 Operating System</h1>
+                    <hr class="mw3 bb bw1 b--black-10">
+                </div>
+                <p class="lh-copy measure center f6 black-70">
+                    Project for CS333.
+                    Expanded the xv6 operating system to support file protection, users/groups and multi-level feedback queues for improved performance.
+                </p>
+            </article>
+            <article class="mw5 center bg-white br3 pa3 pa4-ns mv3 ba b--black-10 card-grow">
+                <div class="tc">
+                    <img src="jslogo.png" class="br-100 h3 w3 dib" title="JavaScript logo">
+                    <h1 class="f4">Weather App</h1>
+                    <hr class="mw3 bb bw1 b--black-10">
+                </div>
+                <p class="lh-copy measure center f6 black-70">
+                    Group project for CS465P.
+                    A web app for finding local weather.
+                    Currently under construction.
+                </p>
+            </article>
+        </div>
+        <div class="about-container center w-50">
+            <a name="about">
+                <h1 class="about-header ttu tracked">About Me</h1>
+                <header class="tc pv4 pv5-ns">
+                    <img src="me.png" class="br3 ba b--black-10 h4 w4 my-picture" alt="Me">
+                    <h1 class="f5 f4-ns fw6 mid-gray">Michael Kelley</h1>
+                    <h2 class="f6 gray fw2 ttu tracked">Portland, OR</h2>
+                    <p>
+                        I'm a 27-year-old student at Portland State University working towards my BS in Computer Science.
+                        In the summer of 2019 I'll be starting my internship as a software engineer at CDK Global here in Portland.
+
+
+                    </p>
+                </header>
             </a>
         </div>
-    </article>
-    <div class="card-wrapper center w-50">
-        <article class="mw5 center bg-white br3 pa3 pa4-ns mv3 ba b--black-10 card-grow">
-            <div class="tc">
-                <a href="http://galaxy-brain.herokuapp.com"><img src="jslogo.png" class="br-100 h3 w3 dib" title="JavaScript logo"></a>
-                <h1 class="f4">Galaxy Brain</h1>
-                <hr class="mw3 bb bw1 b--black-10">
-            </div>
-            <p class="lh-copy measure center f6 black-70">
-                Web application for detecting faces in images.
-                Created with React, Node, Express and PostgreSQL.
-            </p>
-            <a class="f6 no-underline br-pill ph3 pv2 mb2 dib white bg-black button-link" href="http://galaxy-brain.herokuapp.com/">View Website</a>
-        </article>
-        <article class="mw5 center bg-white br3 pa3 pa4-ns mv3 ba b--black-10 card-grow">
-            <div class="tc">
-                <a href="https://github.com/mkelley010/chocan"><img src="javalogo.jpg" class="br-100 h3 w3 dib" title="Java logo"></a>
-                <h1 class="f4">Chocoholics Anonymous</h1>
-                <hr class="mw3 bb bw1 b--black-10">
-            </div>
-            <p class="lh-copy measure center f6 black-70">
-                Group project for CS300.
-                This program processes data for a fictional company known as Chocoholics Anonymous.
-            </p>
-        </article>
-        <article class="mw5 center bg-white br3 pa3 pa4-ns mv3 ba b--black-10 card-grow">
-            <div class="tc">
-                <a href="https://github.com/mkelley010/xv6"><img src="clogo.png" class="br-100 h3 w3 dib" title="C logo"></a>
-                <h1 class="f4">xv6 Operating System</h1>
-                <hr class="mw3 bb bw1 b--black-10">
-            </div>
-            <p class="lh-copy measure center f6 black-70">
-                Project for CS333.
-                Expanded the xv6 operating system to support file protection, users/groups and multi-level feedback queues for improved performance.
-            </p>
-        </article>
-        <article class="mw5 center bg-white br3 pa3 pa4-ns mv3 ba b--black-10 card-grow">
-            <div class="tc">
-                <img src="jslogo.png" class="br-100 h3 w3 dib" title="JavaScript logo">
-                <h1 class="f4">Weather App</h1>
-                <hr class="mw3 bb bw1 b--black-10">
-            </div>
-            <p class="lh-copy measure center f6 black-70">
-                Group project for CS465P.
-                A web app for finding local weather.
-                Currently under construction.
-            </p>
-        </article>
-    </div>
-</body>
+    </body>
 </html>
